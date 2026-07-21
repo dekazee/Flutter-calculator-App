@@ -151,7 +151,6 @@ class _MyAppState extends State<MyApp> {
                 GestureDetector(
                   onTap: (){
                     calcular('AC');
-                    print('AC');
                   },
                   child: Text(
                     'AC',
@@ -174,7 +173,6 @@ class _MyAppState extends State<MyApp> {
               children: [
                 GestureDetector(
                   onTap: () { 
-                    print('Clicou 7');
                     calcular('7'); 
                     },
                   child: Text(
