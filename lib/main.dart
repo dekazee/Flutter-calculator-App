@@ -126,6 +126,7 @@ class _MyAppState extends State<MyApp> {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
+            // where it shows the numbers
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
