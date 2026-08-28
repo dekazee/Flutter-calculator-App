@@ -14,7 +14,7 @@ class _ButtonCalculatorState extends State<ButtonCalculator> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 80,
+      height: 100,
       width: 100,
       child: ElevatedButton(
         onPressed: () {
@@ -25,7 +25,7 @@ class _ButtonCalculatorState extends State<ButtonCalculator> {
           backgroundColor: Colors.blue,
           foregroundColor: const Color.fromARGB(255, 1, 84, 153),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadiusGeometry.circular(30)
+            borderRadius: BorderRadiusGeometry.circular(40)
           )
         ),
         child: Text(widget.label, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),

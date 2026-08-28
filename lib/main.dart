@@ -162,153 +162,69 @@ class _MyAppState extends State<MyApp> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                GestureDetector(
-                  onTap: () { 
-                    calcular('7'); 
-                    },
-                  child: Text(
-                    '7',
-                    style: TextStyle(fontSize: 48),
-                    ),
-                ),
-                GestureDetector(
-                  onTap: (){
-                    calcular('8');
-                  },
-                  child: Text(
-                    '8',
-                    style: TextStyle(fontSize: 48),
-                    ),
-                ),
-                GestureDetector(
-                  onTap: (){
-                    calcular('9');
-                  },
-                  child: Text(
-                    '9',
-                    style: TextStyle(fontSize: 48),
-                    ),
-                ),
-                GestureDetector(
-                  onTap: () => calcular('/'),
-                  child: Text(
-                    '/',
-                    style: TextStyle(fontSize: 48),
-                    ),
-                )
+                ButtonCalculator(label: '7', funcaoBotao: () {
+                  calcular('7');
+                },),
+                ButtonCalculator(label: '8', funcaoBotao: () {
+                  calcular('8');
+                },),
+                ButtonCalculator(label: '9', funcaoBotao: () {
+                  calcular('9');
+                },),
+                ButtonCalculator(label: '/', funcaoBotao: () {
+                  calcular('/');
+                },)
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                GestureDetector(
-                  onTap: () {
-                    calcular('4');
-                  },
-                  child: Text(
-                    '4',
-                    style: TextStyle(fontSize: 48),
-                    ),
-                ),
-                GestureDetector(
-                  onTap: (){
-                    calcular('5');
-                  },
-                  child: Text(
-                    '5',
-                    style: TextStyle(fontSize: 48),
-                    ),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    calcular('6');
-                  },
-                  child: Text(
-                    '6',
-                    style: TextStyle(fontSize: 48),
-                    ),
-                ),
-                GestureDetector(
-                  onTap: () => calcular('X'),
-                  child: Text(
-                    'X',
-                    style: TextStyle(fontSize: 48),
-                    ),
-                )
+                ButtonCalculator(label: '4', funcaoBotao: () {
+                  calcular('4');
+                },),
+                ButtonCalculator(label: '5', funcaoBotao: () {
+                  calcular('5');
+                },),
+                ButtonCalculator(label: '6', funcaoBotao: () {
+                  calcular('6');
+                },),
+                ButtonCalculator(label: 'X', funcaoBotao: () {
+                  calcular('X');
+                },)
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                GestureDetector(
-                  onTap: () {
-                    calcular('1');
-                  },
-                  child: Text(
-                    '1',
-                    style: TextStyle(fontSize: 48),
-                    ),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    calcular('2');
-                  },
-                  child: Text(
-                    '2',
-                    style: TextStyle(fontSize: 48),
-                    ),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    calcular('3');
-                  },
-                  child: Text(
-                    '3',
-                    style: TextStyle(fontSize: 48),
-                    ),
-                ),
-                GestureDetector(
-                  onTap: () => calcular('-'),
-                  child: Text(
-                    '-',
-                    style: TextStyle(fontSize: 48),
-                    ),
-                )
+                ButtonCalculator(label: '1', funcaoBotao: () {
+                  calcular('1');
+                },),
+                ButtonCalculator(label: '2', funcaoBotao: () {
+                  calcular('2');
+                },),
+                ButtonCalculator(label: '3', funcaoBotao: () {
+                  calcular('3');
+                },),
+                ButtonCalculator(label: '-', funcaoBotao: () {
+                  calcular('-');
+                },)
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                GestureDetector(
-                  onTap: () {
-                    calcular('0');
-                  },
-                  child: Text(
-                    '0',
-                    style: TextStyle(fontSize: 48),
-                    ),
-                ),
-                GestureDetector(
-                  onTap: () => calcular(','),
-                  child: Text(
-                    ',',
-                    style: TextStyle(fontSize: 48),
-                    ),
-                ),
-                GestureDetector(
-                  onTap: () => calcular('='),
-                  child: Text(
-                    '=',
-                    style: TextStyle(fontSize: 48),
-                    ),
-                ),
-                GestureDetector(
-                  onTap: () => calcular('+'),
-                  child: Text(
-                    '+',
-                    style: TextStyle(fontSize: 48),
-                    ),
-                )
+                ButtonCalculator(label: '0', funcaoBotao: () {
+                  calcular('0');
+                },),
+                ButtonCalculator(label: ',', funcaoBotao: () {
+                  calcular(',');
+                },),
+                ButtonCalculator(label: '=', funcaoBotao: () {
+                  calcular('=');
+                },),
+                ButtonCalculator(label: '+', funcaoBotao: () {
+                  calcular('+');
+                },)
               ],
             ),
             Text('Coluna6')
