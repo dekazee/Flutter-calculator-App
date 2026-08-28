@@ -1,5 +1,6 @@
 import 'dart:ffi';
 
+import 'package:calculadora/components/button_calculator.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -148,24 +149,14 @@ class _MyAppState extends State<MyApp> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                GestureDetector(
-                  onTap: (){
-                    calcular('AC');
-                  },
-                  child: Text(
-                    'AC',
-                    style: TextStyle(fontSize: 48),
-                    ),
-                ),
+                ButtonCalculator(label: 'AC', funcaoBotao: () {
+                  calcular('AC');
+                },),
                 Text(''),
                 Text(''),
-                GestureDetector(
-                  onTap: () => calcular('back'),
-                  child: Text(
-                    'back',
-                    style: TextStyle(fontSize: 48),
-                    ),
-                ),
+                ButtonCalculator(label: 'back', funcaoBotao: () {
+                  calcular('back');
+                },),
               ],
             ),
             Row(
